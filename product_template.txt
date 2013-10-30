@@ -1,0 +1,34 @@
+<script id="product-template" type="text/x-handlebars-template">
+<div class="product-item">
+	<div class="product-image"><img src="{{ThumbnailPhoto}}"/></div>
+	<div class="product-details">
+		<div class="product-title"><h2>{{ProductModel}}<h2></div>
+		<div class="product-model">{{Title}}</div>
+		<div class="product-description">{{Description}}</div>
+	</div>
+<div style="clear:left;"></div>
+</div>
+</script>
+
+<style>
+.product-item {
+	border: solid 1px gray;
+	padding: 3px;
+	margin: 3px;
+	display: block;
+}
+
+.product-item:hover {
+	background-color: lightgray;
+}
+
+.product-details { 
+	float: left;
+	display: inline-block;
+}
+
+.product-image {
+	float: left;
+	display: inline-block;
+}
+</style>

@@ -1,0 +1,7 @@
+<script id="store-template" type="text/x-handlebars-template">
+<ul>
+{{#each Row}}
+	<li>{{Title}}</li>
+{{/each}}
+</ul>
+</script>
