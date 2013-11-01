@@ -1,7 +1,31 @@
 <script id="store-template" type="text/x-handlebars-template">
-<ul>
+<div>
+<div class="leftCol">
+<ol>
 {{#each Row}}
 	<li>{{Title}}</li>
 {{/each}}
-</ul>
+</ol>
+</div>
+<div class="rightCol" id="map-canvas"></div>
+<div class="clear"/>
+</div>
 </script>
+
+<style>
+.leftCol {
+	float: left;
+}
+
+.rightCol {
+	float: left;
+	min-height: 500px;
+	min-width: 500px;
+	border: solid black 1px;
+	margin-left: 15px;
+}
+
+.clear {
+	clear: left;
+}
+</style>

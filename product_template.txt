@@ -25,10 +25,12 @@
 .product-details { 
 	float: left;
 	display: inline-block;
+	margin-left: 25px;
 }
 
 .product-image {
 	float: left;
 	display: inline-block;
+    padding-top: 7px;
 }
 </style>
