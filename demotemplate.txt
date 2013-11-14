@@ -1,2 +1,44 @@
+<!-- Script Dependencies -->
 <script type="text/javascript" src="/mnspug/_catalogs/masterpage/scripts/jquery-1.10.2.min.js"></script>
 <script type="text/javascript" src="/mnspug/_catalogs/masterpage/scripts/handlebars.js"></script>
+<!-- -->
+
+<!-- Start Template -->
+<script id="product-template" type="text/x-handlebars-template">
+<div class="product-item">
+	<div class="product-image"><img src="{{ThumbnailPhoto}}"/></div>
+	<div class="product-details">
+		<div class="product-title"><h2>{{ProductModel}}<h2></div>
+		<div class="product-model">{{Title}}</div>
+		<div class="product-description">{{Description}}</div>
+	</div>
+<div style="clear:left;"></div>
+</div>
+</script>
+<!-- End Template -->
+
+<!-- CSS Styles -->
+<style>
+.product-item {
+	border: solid 1px gray;
+	padding: 3px;
+	margin: 3px;
+	display: block;
+}
+
+.product-item:hover {
+	background-color: lightgray;
+}
+
+.product-details { 
+	float: left;
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.product-image {
+	float: left;
+	display: inline-block;
+    padding-top: 7px;
+}
+</style>
